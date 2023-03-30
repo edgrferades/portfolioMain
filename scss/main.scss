@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+body{
+    font-size: 1rem;
+    background-color: whitesmoke;
+}
+
+a{
+    text-decoration: none;
+    // background-color: #333;
+}
+
+@import '_hero'

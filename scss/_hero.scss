@@ -1,0 +1,98 @@
+#hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .col { 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+        .descriptionBox{
+            max-width: 450px;
+
+            .description{
+                opacity: 0;
+                animation: fade 1s 4s forwards;
+            }
+        }
+
+        .myButtons{
+            overflow: hidden;
+        
+            a{
+                position: relative;
+                bottom: -90px;
+                animation: reveal 1s 6s forwards;
+
+                .btn{
+                    border-radius: 40px;
+                    margin: 5px 5px;
+                    color: rgb(29, 28, 102);
+                    border-color: rgb(29, 28, 102);
+
+                }
+                .btn:hover{
+                    color: whitesmoke;
+                    background-color: rgb(29, 28, 102);
+                }
+            }
+        }
+    } 
+
+    .left{ //only for h1 and h2 
+        text-align: left;
+
+        .name{
+            overflow: hidden;
+            
+            #hello{
+                position: relative;
+                bottom: -70px;
+                animation: reveal 1s 1s forwards;
+            }
+
+            #intro{
+                position: relative;
+                bottom: -70px;
+                animation: reveal 1s 2s forwards;
+            }
+        }
+
+        .heading{
+            opacity: 0;
+            animation: fade 1s 3s forwards;
+        }
+    }
+
+    img{
+        object-fit: cover;
+        max-width: 450px;
+        max-height: 450px;
+        border-radius: 8px;
+        opacity: 0;
+        animation: fade 1s 5s forwards;
+    }
+
+}
+
+@keyframes reveal {
+    0%{
+        bottom: -70px; 
+    }
+    100%{
+        bottom: 0px; 
+    }
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
