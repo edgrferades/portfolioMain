@@ -1,54 +1,227 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
-  </head>
-  <body>
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <section id="hero">
+  <title>Portfolio</title>
+  <link rel="shortcut icon" href="photos/defaultPhoto.jpg" type="image/png">
 
-      <div class="container text-center">
-        <div class="row">
-        
-          <div class="col text"> <!-- Left side with my introduction -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
 
-            <div class="left">
-              <h2 class="name"><span id="hello">Hello! </span><span id="intro">My name is <span style="color: rgb(112, 112, 112);">Edgar</span></span></h2>
-        
-              <h1 class="heading">Your Enthusiastic New Starter</h1>
-            </div>
+</head>
 
-            <div class="descriptionBox"> <!-- Short brief about me -->
-              <p class="description"><span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore eveniet minus ducimus dolores beatae, sit esse pariatur eius quisquam nemo laudantium quas earum, ab voluptates, voluptate libero veritatis quo sapiente sunt! Animi magnam eveniet error numquam non omnis beatae assumenda!</span></p> 
-            </div>
-           
-            <div class="container myButtons">
-              <a href="#">
-                <button type="button" class="btn btn-outline">View projects</button>
-              </a>
-  
-              <a href="#">
-                <button type="button" class="btn btn-outline">Get in touch</button>
-              </a>            
-            </div>
+<body>
 
+  <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="#navbar"><img src="photos/portrait.png" alt="Logo" width="30" height="24"
+          class="d-inline-block align-text-top">Bootstrap</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="#projects">Projects</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="#miniProjects">Mini Projects</a>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <section id="hero">
+
+    <div class="container text-center">
+      <div class="row">
+
+        <div class="col text"> <!-- Left side with my introduction -->
+
+          <div class="left">
+            <h2 class="name"><span id="hello">Hello! </span><span id="intro">My name is <span
+                  style="color: rgb(112, 112, 112);">Edgar</span></span></h2>
+
+            <h1 class="heading">Your Enthusiastic New Starter</h1>
           </div>
-<!-- Break point. its the photo from here -->
-          <div class="col">
-            <img src="photos/portrait.png" alt="">
+
+          <div class="descriptionBox"> <!-- Short brief about me -->
+            <p class="description"><span>As a front-end developer, my focus is on creating top-notch user experiences
+                that are both efficient and scalable. My experience as a Back-Office Administrator has taught me
+                valuable skills in communication, multitasking, and working under tight deadlines. I am confident that
+                my expertise will be an asset to your team, and I am excited to deliver innovative solutions that drive
+                business success.</span></p>
+          </div>
+
+          <div class="container myButtons">
+            <a href="#projects">
+              <button type="button" class="btn btn-outline">View projects</button>
+            </a>
+
+            <!-- <a href="#" target="_blank">
+              <button type="button" class="btn btn-outline">Get in touch</button>
+            </a> -->
           </div>
 
         </div>
+        <!-- Break point. its the photo from here -->
+        <div class="col">
+          <img src="photos/portrait.png" alt="">
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <section id="projects">
+    <div class="container text-center">
+
+      <h1 class="heading">Projects</h1>
+
+      <div class="row">
+        <div class="column col-sm-6">
+
+          
+
+          <div class="card">
+
+            <div class="cardImage">
+              <img src="photos/calculatorScreenshot.jpg" alt="calculator image">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Calculator</h5>
+              <p class="card-text">This is a web-based calculators created using JavaScript. It provides a user-friendly interface for basic arithmetic operations. This calculator serves as a demonstration of my programming
+                skills and ability to create functional tools.
+              </p>
+              <a class="btn btn-primary" href="https://edgrferades.github.io/web-Calculator/" target="_blank">View project</a>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="column col-sm-6">
+
+          <div class="card">
+            <div class="cardImage">
+              <img src="photos/defaultPhoto.jpg" alt="">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Project Title</h5>
+              <p class="card-text">Project Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+                quos nemohic obcaecati debitis ut libero ipsam labore deleniti ducimus. Non quisquam eveniet culpa sint
+                maiores, ablaborum quaerat eligendi.</p>
+              <a class="btn btn-primary" href="#" target="_blank" >View project</a>
+            </div>
+          </div>
+        </div>
       </div>
 
-    </section>
+    </div>
+  </section>
 
+  <section id="miniProjects">
+    <div class="container text-center">
+      <div class="container text-center">
+        <h1 class="heading">Mini Projects</h1>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
-  </body>
+        <div class="row">
+          <div class="col">
+
+            <div class="container">
+              <a href="https://edgrferades.github.io/Digital-clock/" target="_blank" rel="noopener noreferrer">
+                <img src="photos/DigiClk Icon.png" alt="Project logo" class="logo">
+                <h2>Digital clock</h2>
+                <p class="description">A webpage that features a digital clock with 24-hour and 12-hour format options,
+                  allowing users to easily switch between the two formats and a reset button to start the clock over
+                  again.</p>
+              </a>
+            </div>
+
+          </div>
+          <div class="col">
+
+            <div class="container">
+              <a href="https://edgrferades.github.io/Bulb/" target="_blank" rel="noopener noreferrer">
+                <img src="photos/lightBulbOn.gif" alt="Project logo" class="logo">
+                <h2>Little bulb</h2>
+                <p class="description">A website which features an interactive bulb image that visually toggles on/off
+                  with buttons.</p>
+              </a>
+            </div>
+
+          </div>
+          <!-- <div class="col">
+
+            <div class="container">
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="photos/defaultPhoto.jpg" alt="Project logo" class="logo">
+                <h2>Project Title1</h2>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, illum odit
+                  quo eos ducimus aspernatur totam saepe</p>
+              </a>
+            </div>
+
+          </div> -->
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="footer">
+    <div class="container">
+      <footer>
+
+        <div class="links">
+          <div class="col1">
+            <h4 class="heading sections">Sections</h4>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#miniProjects">Mini projects</a></li>
+            <li><a href="#Contact" target="_blank">Hire me</a></li>
+          </div>
+
+          <div class="col2">
+            <h4 class="heading ContactInfo">Contact Info</h4>
+            <li><a href="mailto:edgarfernandes21@gmail.com">edgarfernandes21@gmail.com</a></li>
+            <li><a href="#number">07466379966</a></li>
+          </div>
+        </div>
+
+        <div class="socialIcon">
+          <div class="socialItem"><a href="https://github.com/edgrferades" target="_blank"><img src="photos/github20.png" alt="github logo"></a>
+          </div>
+          <div class="socialItem"><a href="https://www.linkedin.com/in/edgarfernandes7/" target="_blank"><img src="photos/linkedin20.png" alt="linkedIn logo"></a>
+          </div>
+        </div>
+
+        <p>Copyrigth &copy; 2023 Edgar. All rights reserved</p>
+      </footer>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

@@ -1,3 +1,152 @@
-h1 {
-  color: aqua;
+#hero {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#hero .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+#hero .col .descriptionBox {
+  max-width: 450px;
+}
+#hero .col .descriptionBox .description {
+  opacity: 0;
+  -webkit-animation: fade 1s 4s forwards;
+          animation: fade 1s 4s forwards;
+}
+#hero .col .myButtons {
+  overflow: hidden;
+}
+#hero .col .myButtons a {
+  position: relative;
+  bottom: -90px;
+  -webkit-animation: reveal 1s 6s forwards;
+          animation: reveal 1s 6s forwards;
+}
+#hero .col .myButtons a .btn {
+  border-radius: 40px;
+  margin: 5px 5px;
+  color: rgb(29, 28, 102);
+  border-color: rgb(29, 28, 102);
+}
+#hero .col .myButtons a .btn:hover {
+  color: whitesmoke;
+  background-color: rgb(29, 28, 102);
+}
+#hero .left {
+  text-align: left;
+}
+#hero .left .name {
+  overflow: hidden;
+}
+#hero .left .name #hello {
+  position: relative;
+  bottom: -70px;
+  -webkit-animation: reveal 1s 1s forwards;
+          animation: reveal 1s 1s forwards;
+}
+#hero .left .name #intro {
+  position: relative;
+  bottom: -70px;
+  -webkit-animation: reveal 1s 2s forwards;
+          animation: reveal 1s 2s forwards;
+}
+#hero .left .heading {
+  opacity: 0;
+  -webkit-animation: fade 1s 3s forwards;
+          animation: fade 1s 3s forwards;
+}
+#hero img {
+  border-radius: 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  max-width: 450px;
+  max-height: 450px;
+  opacity: 0;
+  -webkit-animation: fade 1s 5s forwards;
+          animation: fade 1s 5s forwards;
+}
+
+@-webkit-keyframes reveal {
+  0% {
+    bottom: -70px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    bottom: -70px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 768px) {
+  #hero {
+    margin-top: 100px;
+  }
+  #hero .container .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #hero .container .row .col .myButtons {
+    margin-bottom: 30px;
+  }
+  #hero .container .row .col .myButtons a {
+    -webkit-animation: reveal 1s 5s forwards;
+            animation: reveal 1s 5s forwards;
+  }
+  #hero .container .row img {
+    -webkit-animation: fade 1s 6s forwards;
+            animation: fade 1s 6s forwards;
+  }
+}
+#projects {
+  background-color: aqua;
+}
+#projects .col .par {
+  margin: 400px;
 }

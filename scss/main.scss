@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     color: #333;
+    background-color: whitesmoke;
   }
   
 body{
@@ -10,9 +11,17 @@ body{
     background-color: whitesmoke;
 }
 
+P{
+    font-size: 1.1rem;
+}
+ 
+img{
+    border-radius: 2px;
+    object-fit: cover;
+}
 a{
     text-decoration: none;
     // background-color: #333;
 }
 
-@import '_hero'
+@import '_hero.scss';

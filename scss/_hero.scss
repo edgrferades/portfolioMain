@@ -4,95 +4,296 @@
     align-items: center;
     justify-content: center;
 
-    .col { 
+    .col {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         overflow: hidden;
 
-        .descriptionBox{
+        .descriptionBox {
             max-width: 450px;
 
-            .description{
+            .description {
                 opacity: 0;
                 animation: fade 1s 4s forwards;
             }
         }
 
-        .myButtons{
+        .myButtons {
             overflow: hidden;
-        
-            a{
+
+            a {
                 position: relative;
                 bottom: -90px;
                 animation: reveal 1s 6s forwards;
 
-                .btn{
+                .btn {
                     border-radius: 40px;
                     margin: 5px 5px;
                     color: rgb(29, 28, 102);
                     border-color: rgb(29, 28, 102);
-
                 }
-                .btn:hover{
+
+                .btn:hover {
                     color: whitesmoke;
                     background-color: rgb(29, 28, 102);
                 }
             }
         }
-    } 
+    }
 
-    .left{ //only for h1 and h2 
+    .left {
+        //only for h1 and h2 
         text-align: left;
 
-        .name{
+        .name {
             overflow: hidden;
-            
-            #hello{
+
+            #hello {
                 position: relative;
                 bottom: -70px;
                 animation: reveal 1s 1s forwards;
             }
 
-            #intro{
+            #intro {
                 position: relative;
                 bottom: -70px;
                 animation: reveal 1s 2s forwards;
             }
         }
 
-        .heading{
+        .heading {
             opacity: 0;
             animation: fade 1s 3s forwards;
         }
     }
 
-    img{
+    img {
+
+        border-radius: 8px;
         object-fit: cover;
+        width: 100%; // 100% to make the border radius to work on all screen sizes
+        height: 100%;
         max-width: 450px;
         max-height: 450px;
-        border-radius: 8px;
         opacity: 0;
         animation: fade 1s 5s forwards;
     }
 
+    @keyframes reveal {
+        0% {
+            bottom: -70px;
+        }
+
+        100% {
+            bottom: 0px;
+        }
+    }
+
+    @keyframes fade {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
 }
 
-@keyframes reveal {
-    0%{
-        bottom: -70px; 
-    }
-    100%{
-        bottom: 0px; 
+@media screen and (max-width:768px) {
+    #hero {
+        margin-top: 100px;
+
+        .container {
+            .row {
+                flex-direction: column;
+
+                .col {
+                    .myButtons {
+                        margin-bottom: 30px;
+
+                        a {
+                            animation: reveal 1s 5s forwards;
+                        }
+                    }
+                }
+
+                img {
+                    animation: fade 1s 6s forwards;
+                }
+            }
+        }
     }
 }
 
-@keyframes fade {
-    0%{
-        opacity: 0;
+// Projects section
+#projects {
+    .heading{
+        margin: 40px 0;
     }
-    100%{
-        opacity: 1;
+
+    .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        //   gap: 10px; /* add gap between columns */
+
+        .column {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .card {
+                max-width: 350px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .cardImage {
+                    z-index: 0;
+                    transition: transform 0.3s;
+
+                    img {
+                        border-radius: 8px;
+                        width: 400px;
+                        height: 400px;
+                        object-fit: cover;
+                    }
+                }
+
+                .cardImage:hover {
+                    transform: scale(1.1);
+                }
+
+                .card-body {
+                    border-radius: 8px;
+                    position: relative;
+                    bottom: 40px;
+
+                    .btn {
+                        border-radius: 40px;
+                        background-color: whitesmoke;
+                        color: rgb(29, 28, 102);
+                        border-color: rgb(29, 28, 102);
+                    }
+
+                    .btn:hover {
+                        color: whitesmoke;
+                        background-color: rgb(166, 165, 201);
+                    }
+                }
+            }
+        }
     }
 }
+
+@media screen and (max-width:992px) {
+    #projects {
+        margin-top: 100px;
+
+        .row {
+            flex-direction: column;
+
+            .column {
+                margin-bottom: 70px;
+
+                .card {
+                    min-width: 350px;
+                    max-width: 350px;
+                }
+            }
+        }
+    }
+}
+
+#miniProjects {
+    .heading{
+        margin: 40px 0;
+    }
+
+    .row {
+        margin: 70px 0;
+
+        .col {
+            margin-bottom: 40px;
+
+            .container {
+                max-width: 200px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+                border-radius: 8px;
+
+                .logo {
+                    object-fit: cover;
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                    position: relative;
+                    bottom: 35px;
+                }
+            }
+        }
+    }
+}
+
+// Footer section
+#footer {
+    background-color: whitesmoke;
+    padding: 5rem 0 2.5rem 0;
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+        justify-content: center;
+        align-items: start;
+        text-align: center;
+
+        >div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        li {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+        }
+    }
+
+    h4,
+    li a {
+        color: #333;
+    }
+
+    .socialIcon {
+        padding-top: 50px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .socialItem {
+            display: inline-block;
+            margin: 0 10px;
+
+            img {
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+
+
+/* End Footer section */

@@ -1,0 +1,30 @@
+<section id="footer">
+  <div class="container">
+    <footer>
+
+      <div class="links">
+        <div class="col1">
+          <h4 class="heading sections">Sections</h4>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#Contact">Hire me</a></li>
+        </div>
+
+        <div class="col2">
+          <h4 class="heading ContactInfo">Contact Info</h4>
+          <li><a href="mailto:edgarfernandes21@gmail.com">edgarfernandes21@gmail.com</a></li>
+          <li><a href="#number">07466379966</a></li>
+        </div>
+      </div>
+
+      <div class="socialIcon">
+        <div class="socialItem"><a href="https://github.com/edgrferades"><img src="photos/github20.png" alt=""></a>
+        </div>
+        <div class="socialItem"><a href="https://twitter.com/edgrferades"><img src="photos/github20.png" alt=""></a>
+        </div>
+      </div>
+
+      <p>Copyrigth &copy; 2023 Edgar. All rights reserved</p>
+    </footer>
+  </div>
+</section>
