@@ -241,6 +241,9 @@ a {
   color: whitesmoke;
   background-color: rgb(166, 165, 201);
 }
+#projects .row .column .card .card-body .card-text {
+  text-align: left;
+}
 
 @media screen and (max-width: 992px) {
   #projects {
