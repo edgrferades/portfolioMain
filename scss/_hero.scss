@@ -1,3 +1,10 @@
+#navbar{
+
+    li:hover{
+        text-decoration: underline;
+    }
+}
+
 #hero {
     height: 100vh;
     display: flex;
@@ -15,6 +22,7 @@
             max-width: 450px;
 
             .description {
+                text-align: left;
                 opacity: 0;
                 animation: fade 1s 4s forwards;
             }
@@ -181,7 +189,7 @@
 
                     .btn:hover {
                         color: whitesmoke;
-                        background-color: rgb(166, 165, 201);
+                        background-color: rgb(29, 28, 102);
                     }
 
                     .card-text{
@@ -236,6 +244,11 @@
                     position: relative;
                     bottom: 35px;
                 }
+
+                .description{
+                    text-align: left;
+                    padding: 10px;
+                }
             }
         }
     }
@@ -273,6 +286,10 @@
             padding: 0;
             margin: 0;
             text-align: left;
+        }
+
+        li:hover{
+            text-decoration: underline;
         }
     }
 
